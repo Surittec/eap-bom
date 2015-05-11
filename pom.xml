@@ -219,22 +219,6 @@
 				<scope>provided</scope>
 			</dependency>
 			
-			<!-- PicketLink -->
-			
-			<dependency>
-				<groupId>org.picketlink</groupId>
-				<artifactId>picketlink-api</artifactId>
-				<scope>compile</scope>
-				<version>${picketlink.version}</version>
-			</dependency>
-		
-			<dependency>
-				<groupId>org.picketlink</groupId>
-				<artifactId>picketlink-impl</artifactId>
-				<scope>compile</scope>
-				<version>${picketlink.version}</version>
-			</dependency>
-			
 			<!-- test -->
 			
 			<dependency>
