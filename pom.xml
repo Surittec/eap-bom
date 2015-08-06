@@ -4,7 +4,7 @@
 
 	<groupId>br.com.surittec</groupId>
 	<artifactId>eap-bom</artifactId>
-	<version>6.4.0</version>
+	<version>6.4.1</version>
 	<packaging>pom</packaging>
 
 	<name>EAP BOM</name>
@@ -71,6 +71,14 @@
 				<version>${javax.inject.version}</version>
 				<scope>provided</scope>
 			</dependency>
+
+			<dependency>
+				<groupId>javax.mail</groupId>
+				<artifactId>mail</artifactId>
+				<version>${mail.version}</version>
+				<scope>provided</scope>
+			</dependency>
+			
 			
 			<!-- JSF -->
 
@@ -204,10 +212,47 @@
 			</dependency>
 			
 			<dependency>
+				<groupId>commons-pool</groupId>
+				<artifactId>commons-pool</artifactId>
+				<version>${commons-pool.version}</version>
+				<scope>provided</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>commons-logging</groupId>
+				<artifactId>commons-logging</artifactId>
+				<version>${commons-logging.version}</version>
+				<scope>provided</scope>
+			</dependency>
+			
+			<dependency>
 				<groupId>commons-fileupload</groupId>
 				<artifactId>commons-fileupload</artifactId>
 				<version>${commons-fileupload.version}</version>
 				<scope>compile</scope>
+			</dependency>
+			
+			<!-- httpcomponents -->
+
+			<dependency>
+				<groupId>org.apache.httpcomponents</groupId>
+				<artifactId>httpcore</artifactId>
+				<version>${httpcore.version}</version>
+				<scope>provided</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>org.apache.httpcomponents</groupId>
+				<artifactId>httpclient</artifactId>
+				<version>${httpclient.version}</version>
+				<scope>provided</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>org.apache.httpcomponents</groupId>
+				<artifactId>httpmime</artifactId>
+				<version>${httpmime.version}</version>
+				<scope>provided</scope>
 			</dependency>
 			
 			<!-- Weld  -->
@@ -241,6 +286,7 @@
 		<ejb-api.version>1.0.2.Final</ejb-api.version>
 		<jpa.version>1.0.1.Final</jpa.version>
 		<javax.inject.version>1</javax.inject.version>
+		<mail.version>1.4.5</mail.version>
 		
 		<jsf.version>2.1.28</jsf.version>
 		
@@ -260,7 +306,13 @@
 		<commons-collections.version>3.2.1</commons-collections.version>
 		<commons-io.version>2.1</commons-io.version>
 		<commons-lang.version>2.6</commons-lang.version>
+		<commons-pool.version>1.6</commons-pool.version>
+		<commons-logging.version>1.1.3</commons-logging.version>
 		<commons-fileupload.version>1.3.1</commons-fileupload.version>
+		
+		<httpcore.version>4.3.3</httpcore.version>
+		<httpclient.version>4.3.6</httpclient.version>
+		<httpmime.version>4.3.6</httpmime.version>
 		
 		<weld.version>1.1.28.Final</weld.version>
 		<picketlink.version>2.5.4.SP4</picketlink.version>
